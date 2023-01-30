@@ -51,4 +51,5 @@ export const StackCard = styled("div", {
       animation: `${scaleUp} 200ms`,
     },
   },
+ 
 });

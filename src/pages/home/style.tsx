@@ -1,7 +1,7 @@
 import { styled } from "@/styles/stitches.config";
 import { Flex } from "@/styles/Global";
 import { Button } from "@/styles/Buttons";
-import { css } from "@stitches/react"
+import { css } from "@stitches/react";
 
 import img from "@/public/static/img/background/header-bg.svg";
 import dots from "@/public/static/img/background/dots.svg";
@@ -43,10 +43,14 @@ export const HeaderButtonsArea = styled(Flex, {
 });
 
 export const UserImage = styled("img", {
-  borderRadius: "50%",
+  borderRadius: "30%",
+  width: "5.25rem",
+  height: "5.25rem",
+  boxShadow: "-5px 5px 5px 5px #000f0f",
+  border:"solid 2px white",
   "@mobile": {
-    width: "2.25rem",
-    height: "2.25rem",
+    width: "3.25rem",
+    height: "3.25rem",
   },
 });
 

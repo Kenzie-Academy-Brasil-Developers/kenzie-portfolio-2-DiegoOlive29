@@ -5,7 +5,7 @@ import imgNode from "../public/static/img/stack/node.svg";
 import imgStyled from "../public/static/img/stack/styled.svg";
 import imgReact from "../public/static/img/stack/react.svg";
 import { FaVuejs } from "react-icons/fa";
-
+import { DiPostgresql } from "react-icons/di";
 export const stackData = [
   {
     title: "HTML",
@@ -31,5 +31,8 @@ export const stackData = [
     title: "React",
     img: imgReact,
   },
-  { title: "Vuejs", img: FaVuejs },
+  {
+    title: "PostgreSQL",
+    img: DiPostgresql,
+  },
 ];

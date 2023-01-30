@@ -18,7 +18,7 @@ export const Button = styled("button", {
   alignItems: "center",
   width: "max-content",
   whiteSpace: "nowrap",
-
+  
   variants: {
     type: {
       btLink: {
@@ -33,6 +33,7 @@ export const Button = styled("button", {
         "&:hover": {
           backgroundColor: "$brand2",
           borderColor: "$brand2",
+          boxShadow: "-3px 3px 3px 3px #000f0f",
         },
       },
       icon: {
@@ -86,6 +87,16 @@ export const Button = styled("button", {
             backgroundColor: "transparent",
             borderColor: "$socialLinkedin",
             color: "$socialLinkedin",
+          },
+        },
+        ["&.github"]: {
+          backgroundColor: "white",
+          borderColor: "black",
+          color: "black",
+          "&:hover": {
+            backgroundColor: "transparent",
+            borderColor: "white",
+            color: "white",
           },
         },
         "&:hover": {

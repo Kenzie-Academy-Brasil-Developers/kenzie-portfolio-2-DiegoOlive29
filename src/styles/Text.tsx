@@ -13,6 +13,7 @@ export const Text = styled("p", {
     color: "$grey1",
     fontSize: "$text1",
     fontWeight: 400,
+    
     variants: {
         type: {
             heading1: {
@@ -54,6 +55,8 @@ export const Text = styled("p", {
                 ...bodyDefaultConfig
             },
         },
+        
         ...colors
     }
+    
 })

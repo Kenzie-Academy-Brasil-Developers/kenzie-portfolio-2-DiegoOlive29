@@ -27,4 +27,15 @@ export const Footer = styled("footer", {
             }
         }
     },
+    
 })
+export const UserImage = styled("img", {
+    borderRadius: "30%",
+    width: "5.25rem",
+    height: "5.25rem",
+  
+    "@mobile": {
+      width: "3.25rem",
+      height: "3.25rem",
+    },
+  });

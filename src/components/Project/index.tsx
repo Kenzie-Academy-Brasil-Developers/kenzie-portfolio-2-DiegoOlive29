@@ -5,14 +5,17 @@ import {
   ProjectStackTech,
   ProjectLink,
   ProjectLinks,
+  Containerprojetct,
 } from "./style";
 
 import { Text } from "@/styles/Text";
 import { useEffect, useState } from "react";
 import { FaGithub, FaShare } from "react-icons/fa";
 import { userData } from "@/utils/userData";
+import { Container } from "@/styles/Global";
 
 interface ReposType {
+  html_url: string | undefined;
   id: number;
   name: string;
   language: string;
@@ -31,15 +34,19 @@ export const Project = (): JSX.Element => {
       );
       const json = await data.json();
       setRepositories(json);
+
       return json;
     };
     fetchData();
   }, []);
+  console.log(repositories)
+  
 
   return (
     <>
-      {repositories?.map((repository) => (
+      {repositories?.filter(rep => rep.homepage !== null ).map((repository) => (
         <ProjectWrapper key={repository.id}>
+          <Containerprojetct>
           <ProjectTitle
             as="h2"
             type="heading3"
@@ -69,10 +76,11 @@ export const Project = (): JSX.Element => {
           </ProjectStack>
 
           <Text type="body1" color="grey2">
-            {repository.description.substring(0, 129)}
+            {repository.description?.substring(0, 129)}
           </Text>
           <ProjectLinks>
-            <ProjectLink target="_blank" href={repository.git_url}>
+            <ProjectLink target="_blank" href={repository.html_url}>
+              
               <FaGithub /> Github Code
             </ProjectLink>
             {repository.homepage && (
@@ -81,6 +89,7 @@ export const Project = (): JSX.Element => {
               </ProjectLink>
             )}
           </ProjectLinks>
+          </Containerprojetct>
         </ProjectWrapper>
       ))}
     </>

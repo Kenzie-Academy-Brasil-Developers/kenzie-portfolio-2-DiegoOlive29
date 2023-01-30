@@ -39,9 +39,6 @@ export const colors = {
     brand5: {
       color: "$brand5",
     },
-    brand7: {
-      color: "$brand5",
-    },
     grey1: {
       color: "$grey1",
     },
@@ -61,9 +58,7 @@ export const colors = {
     grey5: {
       color: "$grey5",
     },
-    grey6: {
-      color: "$grey6",
-    },
+    
   },
 };
 
@@ -83,20 +78,18 @@ export const globalStyles = globalCss({
 export const GlobalStyle: React.FC<GlobalStyleProps> = ({ children }) => {
   const theme = createTheme({
     colors: {
-      brand1: "#623CEA",
-      brand2: "#311E75",
+      brand1: "#018181", //texto de destaque.
+      brand2: "#0e4746",// mensagem de new hover do see proje
       brand3: "#50CF9A",
       brand4: "#E5F8F0",
-      brand5: "#FF577F",
-      brand6: "#F8E5F3",
-      brand7: "#506CCF",
+      brand5: "#018181",// texto kenzie academy
       brand8: "#E5E9F8",
 
-      grey0: "#0A0A0B",
-      grey1: "#121214",
-      grey2: "#868E96",
-      grey3: "#E9ECEF",
-      grey4: "#F8F9FA",
+      grey0: "#000000", //header-projetos-rodape
+      grey1: "#052a29", //fundo
+      grey2: "#ffffff",
+      grey3: "blue",
+      grey4: "White", // titulos e nome 
       grey5: "#F8F9FA",
 
       socialInstagram: "#CF50AC",
