@@ -23,7 +23,7 @@ export const Footer = (): JSX.Element => {
               Obrigado pela visita! <HandEffect />
             </Text>
             <Text type="body1" color="grey2">
-            Me siga para mantemos contato.   
+            Me siga para mantermos contato.   
              </Text>
           </Box>
         </Flex>

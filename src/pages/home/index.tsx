@@ -44,7 +44,7 @@ export const Home = (): JSX.Element => {
                 height={"48px"}
               />
               <Text color="grey4" css={{ marginLeft: "$2" }}>
-                Olá, meu nome é Diego, tudo bem ? <HandEffect />
+                Olá, meu nome é Diego. Tudo bem? <HandEffect />
               </Text>
             </Flex>
             <Text as="h1" type="heading1" color="grey5">
@@ -59,7 +59,7 @@ export const Home = (): JSX.Element => {
               nos meus projetos!
             </Text>
             <Text type="body1" color="grey2">
-            Aqui vocês iriam encontrar todos os meus projetos e poder acompanhar meu desenvolvimento e evolução como desenvolvedor.
+            Aqui vocês irão encontrar todos os meus projetos e poder acompanhar meu desenvolvimento como desenvolvedor.
             </Text>
             <HeaderButtonsArea>
               <Button as="a" type="primary" href="#projects">

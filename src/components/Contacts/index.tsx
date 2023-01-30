@@ -28,7 +28,7 @@ export const Contacts = () => {
           <motion.div style={{ opacity: scrollYProgress }}>
             <ContactSectionText>
               <Text type="heading2" color="grey4">
-                Vamos conversar ?{" "}
+                Vamos conversar?{" "}
                 <Text as="span" type="heading2" color="brand1">
                   Desenvolver algo
                 </Text>{" "}
@@ -47,7 +47,7 @@ export const Contacts = () => {
                   Me chame no Whatsapp!
                 </Text>
                 <Text color="grey2" type="body2">
-                Estou disponível para um chat de voz, vamos juntos sobre criatividade?
+                Pode me chamar pelo Whatsapp, caso prefira.
                 </Text>
                 <Text
                   as="a"
@@ -56,7 +56,7 @@ export const Contacts = () => {
                   target="_blank"
                   href={`https://api.whatsapp.com/send?phone=+55+${userData.whatsappNumber}&text=Ol%C3%A1%2C%20venho%20por%20meio%20do%20seu%20portf%C3%B3lio%20na%20internet%2C%20gostaria%20de%20conhecer%20melhor%20seus%20servi%C3%A7os`}
                 >
-                  Chame já !
+                  Chame já!
                 </Text>
               </ContactCardContent>
             </ContactCard>
@@ -79,7 +79,7 @@ export const Contacts = () => {
                   target="_blank"
                   href={`mailto:${userData.emailUser}`}
                 >
-                Me mande um email !
+                Me mande um email!
                 </Text>
               </ContactCardContent>
             </ContactCard>
